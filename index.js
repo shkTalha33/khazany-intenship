@@ -9,6 +9,8 @@ connectToMongo()
 
 // routes 
 app.use("/items",require("./src/Routes/ListItemRoutes"))
+app.use("/auth",require("./src/Routes/AuthRoutes"))
+app.use("/products",require("./src/Routes/ProductRoutes"))
 
 const port = process.env.PORT
 
