@@ -29,6 +29,14 @@ const ProductSchema  = mongoose.Schema({
      type:String,
      required:true
     },
+    cloudinary_id:{
+       type:String,
+       required:true
+    },
+    img_url:{
+       type:String,
+       required:true
+    },
     productSizes:{
         type:Array,
         require:true

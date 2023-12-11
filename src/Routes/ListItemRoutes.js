@@ -76,7 +76,7 @@ router.get("/getminprice",async(req,res)=>{
     }
 })
 
-// filtering API on the basis of maximum price
+// filtering API on the basis of maximum price 
 
 router.get("/getmaxprice",async(req,res)=>{
     try {
@@ -194,7 +194,6 @@ router.get("/bestsellingitem",async(req,res)=>{
 
 router.get("/searchbar",async(req,res)=>{
 
-    //  const searchTerm = "ik"
     const searchTerm = req.query.term || ""
 
     if (!searchTerm.trim()) {
