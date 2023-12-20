@@ -2,12 +2,8 @@ const mongoose = require("mongoose")
 
 const ProductSchema  = mongoose.Schema({
     user:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"auth"
-    },
-    productId:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"listItem"
+       type:Object,
+       required:true
     },
     productTitle:{
      type:String,
@@ -25,10 +21,6 @@ const ProductSchema  = mongoose.Schema({
      type:Number,
      required:true
     },
-    sizeSelected:{
-     type:String,
-     required:true
-    },
     cloudinary_id:{
        type:String,
        required:true
@@ -40,6 +32,9 @@ const ProductSchema  = mongoose.Schema({
     productSizes:{
         type:Array,
         require:true
+    },
+    featuredItem:{
+        type:Boolean
     },
     date:{
         type:Date,
